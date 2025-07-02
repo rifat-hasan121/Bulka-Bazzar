@@ -15,7 +15,7 @@ const Home = () => {
         <Helmet>
           <title>Home | Bukla Bazaar</title>
         </Helmet>
-        <div className="py-20 dark:bg-gray-700 dark:text-gray-200">
+        <div className="mt-20 pb-20 dark:bg-gray-700 dark:text-gray-200">
           {/* <Slider></Slider> */}
           <HeroSlider></HeroSlider>
           <div className="w-11/12 mx-auto px-4 ">
