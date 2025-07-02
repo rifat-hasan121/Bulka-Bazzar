@@ -10,7 +10,7 @@ const OfficeSuppliesStationery = () => {
   useEffect(() => {
     const category = "Office Supplies & Stationery";
     fetch(
-      `https://b11a11-server-side-rifat-hasan121.vercel.app/products?category=${encodeURIComponent(
+      `https://bulka-bazar-server.vercel.app/products?category=${encodeURIComponent(
         category
       )}`
     )
@@ -20,7 +20,7 @@ const OfficeSuppliesStationery = () => {
   return (
     <>
       <Helmet>
-      <title>office Supplies Stationery | Bukla Bazaar</title>
+        <title>office Supplies Stationery | Bukla Bazaar</title>
       </Helmet>
       <div className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white text-center px-12 py-20">
         <h1 className="text-3xl mt-32">Office Supplies Stationery </h1>

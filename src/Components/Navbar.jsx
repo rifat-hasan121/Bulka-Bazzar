@@ -41,11 +41,21 @@ const Navbar = () => {
       <li>
         <NavLink to="/all-products">All product</NavLink>
       </li>
+      {user2 && (
+        <>
+          <li>
+            <NavLink to="/add-product">Add Product</NavLink>
+          </li>
+          <li>
+            <NavLink to="/my-product">My product</NavLink>
+          </li>
+        </>
+      )}
       <li>
-        <NavLink to="/add-product">Add Product</NavLink>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <NavLink to="/my-product">My product</NavLink>
+        <NavLink to="/FAQ">FAQ</NavLink>
       </li>
     </>
   );
@@ -117,9 +127,11 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Link to="/my-purchases">
-            <FaShoppingCart size={30} style={{ color: "#B33791" }} />
-          </Link>
+          {user2 && (
+            <Link to="/my-purchases">
+              <FaShoppingCart size={30} style={{ color: "#B33791" }} />
+            </Link>
+          )}
 
           {user2 ? (
             <a

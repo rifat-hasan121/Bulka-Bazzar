@@ -25,18 +25,15 @@ const UpdateData = () => {
 
     // send updated data in database
 
-    fetch(
-      `https://b11a11-server-side-rifat-hasan121.vercel.app/products/${_id}`,
-      {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-          Authorization: `Bearer ${user2?.accessToken}`,
-          crentials: "include",
-        },
-        body: JSON.stringify(updatedData),
-      }
-    )
+    fetch(`https://bulka-bazar-server.vercel.app/products/${_id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+        Authorization: `Bearer ${user2?.accessToken}`,
+        crentials: "include",
+      },
+      body: JSON.stringify(updatedData),
+    })
       .then((res) => res.json())
       .then((result) => {
         if (result.modifiedCount) {

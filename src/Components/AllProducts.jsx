@@ -17,8 +17,8 @@ const AllProducts = () => {
 
   useEffect(() => {
     const url = showAvailableOnly
-      ? "https://b11a11-server-side-rifat-hasan121.vercel.app/products/available"
-      : "https://b11a11-server-side-rifat-hasan121.vercel.app/products";
+      ? "https://bulka-bazar-server.vercel.app/products/available"
+      : "https://bulka-bazar-server.vercel.app/products";
 
     fetch(url, {
       headers: {

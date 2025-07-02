@@ -18,7 +18,7 @@ const MyPurchases = () => {
     const accessToken = user2?.accessToken;
     try {
       const res = await axios.get(
-        `https://b11a11-server-side-rifat-hasan121.vercel.app/my-purchases?email=${user2.email}`,
+        `https://bulka-bazar-server.vercel.app/my-purchases?email=${user2.email}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
@@ -78,7 +78,7 @@ const MyPurchases = () => {
     if (confirm.isConfirmed) {
       try {
         const res = await axios.delete(
-          `https://b11a11-server-side-rifat-hasan121.vercel.app/cancel-purchase/${id}`
+          `https://bulka-bazar-server.vercel.app/cancel-purchase/${id}`
         );
         if (res.data?.message) {
           Swal.fire(
@@ -119,7 +119,7 @@ const MyPurchases = () => {
           <h2 className="text-2xl font-bold mb-4 ">My Purchases</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {purchases.map((item) => {
-              console.log(item)
+              console.log(item);
               return (
                 <div
                   key={item._id}

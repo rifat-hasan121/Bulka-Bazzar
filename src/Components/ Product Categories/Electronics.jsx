@@ -20,7 +20,7 @@ const Electronics = () => {
     } else {
       const category = "Electronics";
       fetch(
-        `https://b11a11-server-side-rifat-hasan121.vercel.app/products?category=${category}`,
+        `https://bulka-bazar-server.vercel.app/products?category=${category}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,

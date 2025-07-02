@@ -12,17 +12,15 @@ const AutomotivePartsAccessories = () => {
   const { user2 } = useContext(AuthContext);
   const accessToken = user2?.accessToken;
 
-  
   // This component can be used to display electronics products
   useEffect(() => {
     if (!accessToken) {
       console.error("Access token is not available.");
       return;
-    }
-    else {
+    } else {
       const category = "Automotive Parts Accessories";
       fetch(
-        `https://b11a11-server-side-rifat-hasan121.vercel.app/products?category=${category}`,
+        `https://bulka-bazar-server.vercel.app/products?category=${category}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
@@ -34,7 +32,6 @@ const AutomotivePartsAccessories = () => {
         .then((res) => res.json())
         .then((data) => setProducts(data));
     }
-    
   }, [accessToken]);
 
   return (

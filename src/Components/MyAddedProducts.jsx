@@ -14,13 +14,12 @@ const MyAddedProducts = () => {
     if (user2?.email) {
       axios
         .get(
-          `https://b11a11-server-side-rifat-hasan121.vercel.app/my-product?email=${user2.email}`,
+          `https://bulka-bazar-server.vercel.app/my-product?email=${user2.email}`,
           {
             headers: {
               Authorization: `Bearer ${accessToken}`,
               credentials: "include",
               "Content-Type": "application/json",
-
             },
           }
         )

@@ -6,9 +6,7 @@ export default function PopularCategories() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://b11a11-server-side-rifat-hasan121.vercel.app/popular-categories"
-    )
+    fetch("https://bulka-bazar-server.vercel.app/popular-categories")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);

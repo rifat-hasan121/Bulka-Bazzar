@@ -8,9 +8,7 @@ export default function TopRatedProducts() {
   const [seeMore, setSeeMore] = useState(false);
 
   useEffect(() => {
-    fetch(
-      "https://b11a11-server-side-rifat-hasan121.vercel.app/top-rated-products"
-    )
+    fetch("https://bulka-bazar-server.vercel.app/top-rated-products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

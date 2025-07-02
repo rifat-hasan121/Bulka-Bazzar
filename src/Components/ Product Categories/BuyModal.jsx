@@ -29,7 +29,7 @@ const BuyModal = ({ product, onClose }) => {
 
     try {
       const response = await axios.post(
-        "https://b11a11-server-side-rifat-hasan121.vercel.app/purchase",
+        "https://bulka-bazar-server.vercel.app/purchase",
         {
           productId: product._id,
           quantity: Number(quantity),

@@ -66,7 +66,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
       // if (currentUser?.email) {
       //   const userData = { email: currentUser.email };
-      //   axios.post("https://b11a11-server-side-rifat-hasan121.vercel.app/jwt", userData, {
+      //   axios.post("https://bulka-bazar-server.vercel.app/jwt", userData, {
       //     withCredentials: true,
       //   })
       //     .then((data) => {

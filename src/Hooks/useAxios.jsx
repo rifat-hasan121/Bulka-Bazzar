@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const axiosInstance = axios.create({
-  baseURL: "https://b11a11-server-side-rifat-hasan121.vercel.app/",
+  baseURL: "https://bulka-bazar-server.vercel.app/",
   headers: {
     "Content-Type": "application/json",
   },

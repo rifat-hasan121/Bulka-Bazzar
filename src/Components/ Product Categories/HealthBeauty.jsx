@@ -10,7 +10,7 @@ const HealthBeauty = () => {
   useEffect(() => {
     const category = "Health & Beauty";
     fetch(
-      `https://b11a11-server-side-rifat-hasan121.vercel.app/products?category=${encodeURIComponent(
+      `https://bulka-bazar-server.vercel.app/products?category=${encodeURIComponent(
         category
       )}`
     )

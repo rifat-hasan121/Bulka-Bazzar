@@ -20,6 +20,8 @@ import PrivetRoute from "../Provider/PrivetRoute";
 import MyPurchases from "../Components/MyPurchases";
 import ProductCategories from "../Components/ Product Categories/ ProductCategories";
 import MyAddedProducts from "../Components/MyAddedProducts";
+import About from "../Components/About";
+import FAQSection from "../Components/FAQSection";
 
 const router = createBrowserRouter([
   {
@@ -44,11 +46,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/product-details/:id",
-        element: <PrivetRoute>
-          <ProductDetails />
-        </PrivetRoute>
-        
-         
+        element: (
+          <PrivetRoute>
+            <ProductDetails />
+          </PrivetRoute>
+        ),
       },
 
       {
@@ -88,17 +90,15 @@ const router = createBrowserRouter([
       {
         path: "/all-products",
         element: (
-          <PrivetRoute>
+         
             <AllProducts />
-          </PrivetRoute>
+          
         ),
       },
       {
         path: "/update-data/:id",
         loader: ({ params }) =>
-          fetch(
-            `https://b11a11-server-side-rifat-hasan121.vercel.app/products/${params.id}`
-          ),
+          fetch(`https://bulka-bazar-server.vercel.app/products/${params.id}`),
         element: <UpdateData></UpdateData>,
       },
       {
@@ -120,6 +120,14 @@ const router = createBrowserRouter([
             <MyPurchases />
           </PrivetRoute>
         ),
+      },
+      {
+        path: "/about",
+        Component: About,
+      },
+      {
+        path: "/FAQ",
+        Component: FAQSection
       },
       {
         path: "/login",

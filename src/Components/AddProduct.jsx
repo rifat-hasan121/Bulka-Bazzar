@@ -38,7 +38,7 @@ const AddProduct = () => {
     const accessToken = user2?.accessToken;
 
     // send data to the server
-    fetch("https://b11a11-server-side-rifat-hasan121.vercel.app/add-products", {
+    fetch("https://bulka-bazar-server.vercel.app/add-products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

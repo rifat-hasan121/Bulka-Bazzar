@@ -16,23 +16,19 @@ const ProductDetails = () => {
   const { user2 } = useContext(AuthContext);
   const accessToken = user2?.accessToken;
 
-  useEffect(() => { 
-  
+  useEffect(() => {
     if (!accessToken) {
       console.error("Access token is not available.");
       return;
     } else {
       setLoading(true);
-      fetch(
-        `https://b11a11-server-side-rifat-hasan121.vercel.app/products/${params.id}`,
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-        }
-      )
+      fetch(`https://bulka-bazar-server.vercel.app/products/${params.id}`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      })
         .then((res) => res.json())
         .then((data) => {
           setProduct(data);
@@ -42,11 +38,8 @@ const ProductDetails = () => {
           console.error("Error fetching product details:", error);
         });
     }
-    
-
-    
-  },[setProduct,setLoading, accessToken, params.id]);
-  console.log(product)
+  }, [setProduct, setLoading, accessToken, params.id]);
+  console.log(product);
 
   if (loading) return <Loading></Loading>;
 
