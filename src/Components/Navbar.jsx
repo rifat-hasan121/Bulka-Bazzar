@@ -59,7 +59,6 @@ const Navbar = () => {
       </li>
     </>
   );
-  // check if user2 is an object and has a displayName property
 
   return (
     <div className="bg-transparent text-black dark:bg-gray-700 dark:text-white backdrop-blur-xl fixed top-0 right-0 left-0 z-50">
