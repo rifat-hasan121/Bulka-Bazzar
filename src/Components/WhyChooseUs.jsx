@@ -24,14 +24,15 @@ const WhyChooseUs = () => {
     <section className="py-16  text-black dark:text-gray-100">
       <div className=" mx-auto px-4">
         <motion.h2
-          className="text-4xl font-bold text-center mb-8 text-black dark:text-white"
+          className="text-lg md:text-xl font-bold bg-black inline px-4 rounded-tr-2xl text-gray-100"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           Why Choose Us
         </motion.h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <hr className="border-1 dark:border-white border-black" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 my-6">
           {reasons.map((item, index) => (
             <motion.div
               key={index}

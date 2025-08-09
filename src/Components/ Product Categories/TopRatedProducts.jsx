@@ -33,12 +33,29 @@ export default function TopRatedProducts() {
       <Helmet>
         <title>Top Rated Products | Bukla Bazaar</title>
       </Helmet>
-      <div className="mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold my-12 text-center text-black dark:text-gray-200">
-          Top Rated Products
-        </h2>
+      <div className="mx-auto px-4 pb-10">
+        <div className="flex justify-between items-center">
+          <div>
+            <h2 className="text-lg md:text-xl font-bold my-12 text-center bg-black inline px-4 rounded-tr-2xl text-gray-100">
+              Top Rated Products
+            </h2>
+          </div>
+          <div>
+            {!seeMore && (
+              <div className="text-center ">
+                <button
+                  onClick={() => setSeeMore(true)}
+                  className="px-5 text-blue-400 transition duration-300"
+                >
+                  See More
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+        <hr className="border-1 dark:border-white border-black" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-6">
           {visibleProducts?.map((product, index) => (
             <motion.div
               key={product._id}
@@ -51,17 +68,6 @@ export default function TopRatedProducts() {
             </motion.div>
           ))}
         </div>
-
-        {!seeMore && (
-          <div className="text-center mt-6">
-            <button
-              onClick={() => setSeeMore(true)}
-              className="px-5 py-2 bg-[#B33791] text-white rounded hover:bg-[#9a2b7a] transition duration-300"
-            >
-              See More
-            </button>
-          </div>
-        )}
       </div>
     </>
   );

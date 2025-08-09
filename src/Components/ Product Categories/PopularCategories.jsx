@@ -29,12 +29,18 @@ export default function PopularCategories() {
       <Helmet>
         <title>Popular Categories | Bukla Bazaar</title>
       </Helmet>
-      <div className="mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-6 text-center text-black dark:text-gray-200">
-          🔥 Popular Categories
-        </h2>
+      <div className="mx-auto px-4 pb-10">
+        <div className="flex justify-between items-center">
+          <div>
+            <h2 className="text-lg md:text-xl font-bold text-center my-12 bg-black inline px-4 rounded-tr-2xl text-gray-100">
+             Popular Categories
+            </h2>
+          </div>
+        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <hr className="border-1 dark:border-white border-black" />
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 my-6">
           {categories.map((cat, i) => (
             <motion.div
               key={i}

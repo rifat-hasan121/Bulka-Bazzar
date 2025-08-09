@@ -249,7 +249,7 @@ const ProductCategories = () => {
       <section className=" mx-auto px-6 py-10">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-xl font-extrabold my-2 bg-black inline px-4 rounded-tr-2xl text-gray-100">
+            <h1 className="text-lg md:text-xl font-extrabold my-2 bg-black inline px-4 rounded-tr-2xl text-gray-100">
               Product Categories
             </h1>
           </div>
@@ -258,7 +258,7 @@ const ProductCategories = () => {
               onClick={() => setShowAll(!showAll)}
               className=" text-blue-400 font-medium  px-8 transition duration-300"
             >
-              {showAll ? "Show Less" : "See All Categories"}
+              {showAll ? "Show Less" : "See All"}
             </button>
           </div>
         </div>
