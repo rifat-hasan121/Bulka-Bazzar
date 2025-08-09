@@ -247,6 +247,7 @@ const ProductCategories = () => {
       </Helmet>
 
       <section className=" mx-auto px-6 py-10">
+        {/* change some design */}
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-lg md:text-xl font-extrabold my-2 bg-black inline px-4 rounded-tr-2xl text-gray-100">
