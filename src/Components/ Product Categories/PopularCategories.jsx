@@ -30,6 +30,7 @@ export default function PopularCategories() {
         <title>Popular Categories | Bukla Bazaar</title>
       </Helmet>
       <div className="mx-auto px-4 pb-10">
+        {/* changes design */}
         <div className="flex justify-between items-center">
           <div>
             <h2 className="text-lg md:text-xl font-bold text-center my-12 bg-black inline px-4 rounded-tr-2xl text-gray-100">
