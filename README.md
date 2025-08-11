@@ -1,6 +1,10 @@
-# BulkBazaar - B2B Wholesale Marketplace
+# BulkBazaar - Wholesale Marketplace
 
 Welcome to **BulkBazaar**, a global B2B wholesale platform designed to connect manufacturers and distributors with retailers, resellers, and institutional buyers. This full-featured web application supports multi-category product listings, bulk order purchasing, protected routes, JWT authentication, and a seamless user experience across devices.
+
+<img src="https://i.ibb.co.com/zLW6mhz/Screenshot-from-2025-08-11-22-27-51.png" alt="BloodBridge Screenshot" width="500">
+</br>
+<img src="https://i.ibb.co.com/9H4Rftmf/Screenshot-from-2025-08-11-22-28-07.png" alt="BloodBridge Screenshot" width="500">
 
 ## 🚀 Live Website
 
